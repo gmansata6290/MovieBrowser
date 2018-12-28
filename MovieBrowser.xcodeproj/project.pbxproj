@@ -11,12 +11,20 @@
 		04D78DB921D671B200B3F85C /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DB821D671B200B3F85C /* MovieDetailViewController.swift */; };
 		04D78DBC21D672A100B3F85C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DBB21D672A100B3F85C /* GradientView.swift */; };
 		04D78DBE21D673FC00B3F85C /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DBD21D673FC00B3F85C /* MovieCollectionViewCell.swift */; };
-		04D78DC021D6745D00B3F85C /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DBF21D6745D00B3F85C /* AppConstant.swift */; };
+		04D78DC021D6745D00B3F85C /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DBF21D6745D00B3F85C /* Global.swift */; };
 		04D78DC321D6748E00B3F85C /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DC221D6748E00B3F85C /* UIDevice.swift */; };
 		04D78DC521D674D100B3F85C /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DC421D674D100B3F85C /* UIFont.swift */; };
 		04D78DC721D6753F00B3F85C /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DC621D6753F00B3F85C /* DateFormatter.swift */; };
 		04D78DC921D675D100B3F85C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DC821D675D100B3F85C /* Movie.swift */; };
 		04D78DCB21D676BF00B3F85C /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DCA21D676BF00B3F85C /* MovieList.swift */; };
+		04D78DCE21D686F700B3F85C /* MovieEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DCD21D686F700B3F85C /* MovieEndPoint.swift */; };
+		04D78DD221D687B900B3F85C /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DD121D687B900B3F85C /* EndPointType.swift */; };
+		04D78DD421D6884B00B3F85C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DD321D6884B00B3F85C /* Router.swift */; };
+		04D78DD621D6886800B3F85C /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DD521D6886800B3F85C /* NetworkLogger.swift */; };
+		04D78DD921D6898800B3F85C /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DD821D6898800B3F85C /* ParameterEncoding.swift */; };
+		04D78DDB21D689EC00B3F85C /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DDA21D689EC00B3F85C /* URLParameterEncoder.swift */; };
+		04D78DDD21D68A3300B3F85C /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DDC21D68A3300B3F85C /* JSONParameterEncoder.swift */; };
+		04D78DE021D68C0900B3F85C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DDF21D68C0900B3F85C /* NetworkManager.swift */; };
 		04F455A121D66F1700FC6F48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F455A021D66F1700FC6F48 /* AppDelegate.swift */; };
 		04F455A621D66F1700FC6F48 /* Movies.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F455A421D66F1700FC6F48 /* Movies.storyboard */; };
 		04F455A821D66F1800FC6F48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F455A721D66F1800FC6F48 /* Assets.xcassets */; };
@@ -51,12 +59,20 @@
 		04D78DB821D671B200B3F85C /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		04D78DBB21D672A100B3F85C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		04D78DBD21D673FC00B3F85C /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
-		04D78DBF21D6745D00B3F85C /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		04D78DBF21D6745D00B3F85C /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		04D78DC221D6748E00B3F85C /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 		04D78DC421D674D100B3F85C /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		04D78DC621D6753F00B3F85C /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		04D78DC821D675D100B3F85C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		04D78DCA21D676BF00B3F85C /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
+		04D78DCD21D686F700B3F85C /* MovieEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEndPoint.swift; sourceTree = "<group>"; };
+		04D78DD121D687B900B3F85C /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		04D78DD321D6884B00B3F85C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		04D78DD521D6886800B3F85C /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		04D78DD821D6898800B3F85C /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		04D78DDA21D689EC00B3F85C /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		04D78DDC21D68A3300B3F85C /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		04D78DDF21D68C0900B3F85C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		04F4559D21D66F1700FC6F48 /* MovieBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F455A021D66F1700FC6F48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F455A521D66F1700FC6F48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Movies.storyboard; sourceTree = "<group>"; };
@@ -110,6 +126,10 @@
 		04D78DAE21D66FE100B3F85C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				04D78DDE21D68BD300B3F85C /* Manager */,
+				04D78DD721D6896F00B3F85C /* Encoding */,
+				04D78DCF21D6879C00B3F85C /* Service */,
+				04D78DCC21D6869700B3F85C /* EndPoint */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -117,6 +137,7 @@
 		04D78DAF21D66FFE00B3F85C /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				04D78DBF21D6745D00B3F85C /* Global.swift */,
 				04D78DB221D6701600B3F85C /* Controllers */,
 				04D78DB121D6701000B3F85C /* Models */,
 				04D78DB021D6700A00B3F85C /* Views */,
@@ -135,7 +156,6 @@
 		04D78DB121D6701000B3F85C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				04D78DBF21D6745D00B3F85C /* AppConstant.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -190,6 +210,42 @@
 				04D78DC621D6753F00B3F85C /* DateFormatter.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		04D78DCC21D6869700B3F85C /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				04D78DCD21D686F700B3F85C /* MovieEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		04D78DCF21D6879C00B3F85C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				04D78DD121D687B900B3F85C /* EndPointType.swift */,
+				04D78DD321D6884B00B3F85C /* Router.swift */,
+				04D78DD521D6886800B3F85C /* NetworkLogger.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		04D78DD721D6896F00B3F85C /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				04D78DD821D6898800B3F85C /* ParameterEncoding.swift */,
+				04D78DDA21D689EC00B3F85C /* URLParameterEncoder.swift */,
+				04D78DDC21D68A3300B3F85C /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		04D78DDE21D68BD300B3F85C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				04D78DDF21D68C0900B3F85C /* NetworkManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		04F4559421D66F1700FC6F48 = {
@@ -498,17 +554,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D78DE021D68C0900B3F85C /* NetworkManager.swift in Sources */,
+				04D78DD621D6886800B3F85C /* NetworkLogger.swift in Sources */,
 				04D78DC721D6753F00B3F85C /* DateFormatter.swift in Sources */,
 				04F455A121D66F1700FC6F48 /* AppDelegate.swift in Sources */,
+				04D78DD221D687B900B3F85C /* EndPointType.swift in Sources */,
 				04D78DB921D671B200B3F85C /* MovieDetailViewController.swift in Sources */,
 				04D78DBE21D673FC00B3F85C /* MovieCollectionViewCell.swift in Sources */,
 				04D78DC921D675D100B3F85C /* Movie.swift in Sources */,
+				04D78DDB21D689EC00B3F85C /* URLParameterEncoder.swift in Sources */,
 				04D78DCB21D676BF00B3F85C /* MovieList.swift in Sources */,
-				04D78DC021D6745D00B3F85C /* AppConstant.swift in Sources */,
+				04D78DC021D6745D00B3F85C /* Global.swift in Sources */,
 				04D78DC521D674D100B3F85C /* UIFont.swift in Sources */,
+				04D78DD921D6898800B3F85C /* ParameterEncoding.swift in Sources */,
 				04D78DBC21D672A100B3F85C /* GradientView.swift in Sources */,
+				04D78DD421D6884B00B3F85C /* Router.swift in Sources */,
+				04D78DDD21D68A3300B3F85C /* JSONParameterEncoder.swift in Sources */,
 				04D78DB721D6719600B3F85C /* MoviesCollectionViewController.swift in Sources */,
 				04D78DC321D6748E00B3F85C /* UIDevice.swift in Sources */,
+				04D78DCE21D686F700B3F85C /* MovieEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
