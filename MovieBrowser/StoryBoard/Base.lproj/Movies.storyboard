@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Detail View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MovieDetailViewController" customModule="MovieBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Movies Collection View Controller-->
+        <scene sceneID="vgK-pR-TXS">
+            <objects>
+                <collectionViewController id="ISs-PZ-ENg" customClass="MoviesCollectionViewController" customModule="MovieBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pPa-oO-0Dz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Uso-CH-mHC">
+                            <size key="itemSize" width="170" height="300"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="movieCell" id="AIh-Tm-2SO" customClass="MovieCollectionViewCell" customModule="MovieBrowser" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="300"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uHM-HJ-9F4">
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="300"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0Y-ne-Z4k" customClass="GradientView" customModule="MovieBrowser" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="230" width="170" height="70"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                                    <real key="value" value="-1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                    <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="489-LF-Xpf">
+                                            <rect key="frame" x="0.0" y="230" width="170" height="70"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" priority="750" constant="70" id="93S-UG-fZ6"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="489-LF-Xpf" firstAttribute="leading" secondItem="uHM-HJ-9F4" secondAttribute="leading" id="AaF-p3-CbU"/>
+                                    <constraint firstAttribute="bottom" secondItem="uHM-HJ-9F4" secondAttribute="bottom" id="JrD-5o-JcX"/>
+                                    <constraint firstItem="c0Y-ne-Z4k" firstAttribute="trailing" secondItem="489-LF-Xpf" secondAttribute="trailing" id="P1k-jo-wOX"/>
+                                    <constraint firstItem="489-LF-Xpf" firstAttribute="trailing" secondItem="uHM-HJ-9F4" secondAttribute="trailing" id="RuI-G4-QGe"/>
+                                    <constraint firstItem="489-LF-Xpf" firstAttribute="bottom" secondItem="uHM-HJ-9F4" secondAttribute="bottom" id="SX5-CG-wDU"/>
+                                    <constraint firstItem="c0Y-ne-Z4k" firstAttribute="leading" secondItem="489-LF-Xpf" secondAttribute="leading" id="TDf-TX-zKn"/>
+                                    <constraint firstItem="uHM-HJ-9F4" firstAttribute="top" secondItem="AIh-Tm-2SO" secondAttribute="top" id="Za8-gN-deP"/>
+                                    <constraint firstItem="c0Y-ne-Z4k" firstAttribute="top" secondItem="489-LF-Xpf" secondAttribute="top" id="i0h-kR-w5j"/>
+                                    <constraint firstAttribute="trailing" secondItem="uHM-HJ-9F4" secondAttribute="trailing" id="iIj-cY-NzQ"/>
+                                    <constraint firstItem="uHM-HJ-9F4" firstAttribute="leading" secondItem="AIh-Tm-2SO" secondAttribute="leading" id="mvR-Xf-BED"/>
+                                    <constraint firstItem="c0Y-ne-Z4k" firstAttribute="bottom" secondItem="489-LF-Xpf" secondAttribute="bottom" id="ynS-Zj-TpH"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="movieImgVw" destination="uHM-HJ-9F4" id="izs-pi-6X5"/>
+                                    <outlet property="movieTitleLbl" destination="489-LF-Xpf" id="1zQ-BR-ure"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ISs-PZ-ENg" id="Ktu-qT-bEW"/>
+                            <outlet property="delegate" destination="ISs-PZ-ENg" id="9bn-bd-Po1"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="JBT-6v-buK"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UBq-v9-5nU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159" y="808"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lu9-t4-LN4">
+            <objects>
+                <navigationController id="18A-CJ-pkR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ask-tS-cKd">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ISs-PZ-ENg" kind="relationship" relationship="rootViewController" id="PmB-pB-j0u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exS-xb-gQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

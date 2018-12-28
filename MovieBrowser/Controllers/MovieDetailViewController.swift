@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MovieDetailViewController.swift
 //  MovieBrowser
 //
 //  Created by Shayona on 28/12/18.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MovieDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
-
-
 }
-
