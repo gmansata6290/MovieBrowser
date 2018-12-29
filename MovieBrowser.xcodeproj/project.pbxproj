@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C6D8A721D75E1E0043B06F /* SearchBarCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C6D8A621D75E1E0043B06F /* SearchBarCollectionReusableView.swift */; };
 		04D78DB721D6719600B3F85C /* MoviesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DB621D6719600B3F85C /* MoviesCollectionViewController.swift */; };
 		04D78DB921D671B200B3F85C /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DB821D671B200B3F85C /* MovieDetailViewController.swift */; };
 		04D78DBC21D672A100B3F85C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D78DBB21D672A100B3F85C /* GradientView.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		006E672E5D079787E08F41CC /* Pods_MovieBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C6D8A621D75E1E0043B06F /* SearchBarCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarCollectionReusableView.swift; sourceTree = "<group>"; };
 		04D78DB621D6719600B3F85C /* MoviesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCollectionViewController.swift; sourceTree = "<group>"; };
 		04D78DB821D671B200B3F85C /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		04D78DBB21D672A100B3F85C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				04D78DBD21D673FC00B3F85C /* MovieCollectionViewCell.swift */,
+				04C6D8A621D75E1E0043B06F /* SearchBarCollectionReusableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D78DE021D68C0900B3F85C /* NetworkManager.swift in Sources */,
+				04C6D8A721D75E1E0043B06F /* SearchBarCollectionReusableView.swift in Sources */,
 				04D78DD621D6886800B3F85C /* NetworkLogger.swift in Sources */,
 				04D78DC721D6753F00B3F85C /* DateFormatter.swift in Sources */,
 				04F455A121D66F1700FC6F48 /* AppDelegate.swift in Sources */,

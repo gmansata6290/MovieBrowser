@@ -35,13 +35,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Uso-CH-mHC">
                             <size key="itemSize" width="170" height="300"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="150" height="90"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="movieCell" id="AIh-Tm-2SO" customClass="MovieCollectionViewCell" customModule="MovieBrowser" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="170" height="300"/>
+                                <rect key="frame" x="0.0" y="90" width="170" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="170" height="300"/>
@@ -68,10 +68,10 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="489-LF-Xpf">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="749" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="489-LF-Xpf">
                                             <rect key="frame" x="0.0" y="230" width="170" height="70"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" priority="750" constant="70" id="93S-UG-fZ6"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="70" id="93S-UG-fZ6"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,14 +98,47 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="CollectionViewHeader" id="yin-py-mP4" customClass="SearchBarCollectionReusableView" customModule="MovieBrowser" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" placeholder="Search movies" translatesAutoresizingMaskIntoConstraints="NO" id="dAm-By-Ny5">
+                                    <rect key="frame" x="0.0" y="17" width="375" height="56"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="ISs-PZ-ENg" id="0up-mG-5uc"/>
+                                    </connections>
+                                </searchBar>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="dAm-By-Ny5" firstAttribute="leading" secondItem="yin-py-mP4" secondAttribute="leading" id="1c2-cX-UVj"/>
+                                <constraint firstAttribute="trailing" secondItem="dAm-By-Ny5" secondAttribute="trailing" id="TSJ-la-JRm"/>
+                                <constraint firstItem="dAm-By-Ny5" firstAttribute="centerY" secondItem="yin-py-mP4" secondAttribute="centerY" id="eKd-wf-g6Y"/>
+                                <constraint firstItem="dAm-By-Ny5" firstAttribute="centerX" secondItem="yin-py-mP4" secondAttribute="centerX" id="feA-Pg-HB3"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="searchBar" destination="dAm-By-Ny5" id="dEM-kD-GRn"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="ISs-PZ-ENg" id="Ktu-qT-bEW"/>
                             <outlet property="delegate" destination="ISs-PZ-ENg" id="9bn-bd-Po1"/>
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="JBT-6v-buK"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="qLq-Or-vl3" id="lCU-QC-CcX"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UBq-v9-5nU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="qLq-Or-vl3">
+                    <connections>
+                        <outlet property="delegate" destination="ISs-PZ-ENg" id="kTA-9B-Sic"/>
+                        <outlet property="searchContentsController" destination="ISs-PZ-ENg" id="5OA-ke-jKi"/>
+                        <outlet property="searchResultsDataSource" destination="ISs-PZ-ENg" id="hAn-x3-o7p"/>
+                        <outlet property="searchResultsDelegate" destination="ISs-PZ-ENg" id="8GJ-P9-DFc"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-159" y="808"/>
         </scene>

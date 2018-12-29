@@ -9,10 +9,10 @@
 import UIKit
 
 struct MovieList {
-    let page: Int
-    let numberOfResults: Int
-    let numberOfPages: Int
-    let movies: [Movie]
+    let page: Int?
+    let numberOfResults: Int?
+    let numberOfPages: Int?
+    let movies: [Movie]?
 }
 
 extension MovieList: Codable {
@@ -27,9 +27,9 @@ extension MovieList: Codable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: MovieApiResponseCodingKeys.self)
         
-        page = try container.decode(Int.self, forKey: .page)
-        numberOfResults = try container.decode(Int.self, forKey: .numberOfResults)
-        numberOfPages = try container.decode(Int.self, forKey: .numberOfPages)
-        movies = try container.decode([Movie].self, forKey: .movies)
+        page = try container.decodeIfPresent(Int.self, forKey: .page)
+        numberOfResults = try container.decodeIfPresent(Int.self, forKey: .numberOfResults)
+        numberOfPages = try container.decodeIfPresent(Int.self, forKey: .numberOfPages)
+        movies = try container.decodeIfPresent([Movie].self, forKey: .movies)
     }
 }
